@@ -1,0 +1,35 @@
+{
+  "name": "art-portfolio",
+  "version": "1.0.0",
+  "description": "Art portfolio",
+  "main": "index.js",
+  "dependencies": {
+    "turbo-linux-64": "^2.2.3"
+  },
+  "devDependencies": {
+    "turbo": "^2.2.3"
+  },
+  "scripts": {
+    "start:dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "node apps/api/dist/main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NZivkovic94/art-portfolio.git"
+  },
+  "keywords": [
+    "art",
+    "portfolio"
+  ],
+  "author": "Nikola Zivkovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NZivkovic94/art-portfolio/issues"
+  },
+  "homepage": "https://github.com/NZivkovic94/art-portfolio#readme",
+  "packageManager": "npm@10.9.0",
+  "workspaces": [
+    "apps/*"
+  ]
+}
