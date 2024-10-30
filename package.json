@@ -4,7 +4,8 @@
   "description": "Art portfolio",
   "main": "index.js",
   "dependencies": {
-    "turbo-linux-64": "^2.2.3"
+    "turbo-linux-64": "^2.2.3",
+    "vercel": "^37.13.0"
   },
   "devDependencies": {
     "turbo": "^2.2.3"
