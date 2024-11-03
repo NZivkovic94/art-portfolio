@@ -1,7 +1,7 @@
 import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import IconButton from '@mui/material/IconButton';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -11,28 +11,24 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 function Footer() {
   return (
     <AppBar
-      position="fixed" // Stick to the bottom
+      position="fixed" // Fixes the footer to the bottom
       color="primary"
       component="footer"
       sx={{
         top: 'auto',
         bottom: 0,
-        width: '100%', // Full width
-        p: 2, // Padding for inner content
-        textAlign: 'center',
+        width: '100%', // Ensures full width
       }}
     >
-      <Toolbar sx={{ flexDirection: 'column' }}>
+      <Toolbar sx={{ flexDirection: 'column', textAlign: 'center', width: '100%' }}>
         
-        {/* Footer Links */}
         <Box sx={{ display: 'flex', gap: 3, justifyContent: 'center', mb: 1 }}>
-          <Link href="#" color="inherit" underline="hover">Home</Link>
-          <Link href="#" color="inherit" underline="hover">About</Link>
-          <Link href="#" color="inherit" underline="hover">Services</Link>
-          <Link href="#" color="inherit" underline="hover">Contact</Link>
+          <Link href="/" color="inherit" underline="hover">Home</Link>
+          <Link href="/projects" color="inherit" underline="hover">Projects</Link>
+          <Link href="/about" color="inherit" underline="hover">About Me</Link>
+          {/* <Link href="#" color="inherit" underline="hover">Contact</Link> */}
         </Box>
 
-        {/* Social Media Icons */}
         <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, mb: 1 }}>
           <IconButton color="inherit" href="https://facebook.com" target="_blank" rel="noopener">
             <FacebookIcon />
@@ -44,8 +40,7 @@ function Footer() {
             <LinkedInIcon />
           </IconButton>
         </Box>
-        
-        {/* Copyright */}
+
         <Typography variant="body2" color="inherit">
           © {new Date().getFullYear()} MyApp. All rights reserved.
         </Typography>

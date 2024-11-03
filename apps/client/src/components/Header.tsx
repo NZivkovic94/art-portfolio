@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -22,11 +23,10 @@ function Header() {
           </Typography>
 
           <Box sx={{ display: { xs: 'none', sm: 'flex' }, gap: 2 }}>
-            <Button color="inherit">Home</Button>
-            <Button color="inherit">Projects</Button>
-            <Button color="inherit">Info</Button>
-            <Button color="inherit">Contact</Button>
-            
+            <Button component={Link} to="/" color="inherit">Home</Button>
+            <Button component={Link} to="/projects" color="inherit">Projects</Button>
+            <Button component={Link} to="/about" color="inherit">About Me</Button>
+            {/* <Button component={Link} to="/contact" color="inherit">Contact</Button> */}
           </Box>
         </Container>
       </Toolbar>
