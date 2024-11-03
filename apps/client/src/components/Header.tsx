@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <AppBar position="fixed" color="primary" sx={{ width: '100%' }}>
+    <AppBar position="fixed" color="secondary" sx={{ width: '100%' }}>
       <Toolbar>
         <Container
           maxWidth="lg"

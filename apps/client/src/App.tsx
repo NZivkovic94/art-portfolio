@@ -13,11 +13,20 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Router>
-        <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', width: '100%', bgcolor: 'primary.main', }}>
           <Header />
           <Toolbar />
-          
-          <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+
+          {/* Main content Box */}
+          <Box
+            component="main"
+            sx={{
+              flexGrow: 1,
+              p: 3,
+              width: '100%', // Ensure full width
+              bgcolor: 'transparent', // Optional: set background color as needed
+            }}
+          >
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/projects" element={<ProjectsPage />} />
@@ -26,6 +35,7 @@ function App() {
           </Box>
         </Box>
 
+        {/* Footer should be outside the flex container for full width */}
         <Footer />
       </Router>
     </ThemeProvider>

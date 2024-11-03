@@ -2,7 +2,14 @@ import { Box, Grid, Card, CardMedia } from '@mui/material';
 
 function HomePage() {
   return (
-    <Box sx={{ p: 4 }}>
+    <Box
+      sx={{
+        p: 4,
+        bgcolor: 'transparent', // Make sure it's transparent or use theme colors as needed
+        color: 'text.primary',
+        width: '100%', // Ensure full width
+      }}
+    >
       <Grid container spacing={2}>
         {[1, 2, 3, 4, 5, 6].map((item) => (
           <Grid item xs={12} sm={6} md={4} key={item}>

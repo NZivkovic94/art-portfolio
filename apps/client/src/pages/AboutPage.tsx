@@ -1,14 +1,18 @@
-import { Box, Typography } from '@mui/material';
+// Example for AboutPage
+import { Box } from '@mui/material';
 
 function AboutPage() {
   return (
-    <Box sx={{ p: 4 }}>
-      <Typography variant="h4" gutterBottom>
-        About Me
-      </Typography>
-      <Typography variant="body1" color="text.secondary">
-        Here’s a short bio or personal story.
-      </Typography>
+    <Box
+      sx={{
+        p: 4,
+        bgcolor: 'transparent', // Adjust based on your theme
+        color: 'text.primary',
+        width: '100%', // Ensure full width
+      }}
+    >
+      <h1>About Me</h1>
+      <p>This is the about me page content.</p>
     </Box>
   );
 }

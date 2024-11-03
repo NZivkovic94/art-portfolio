@@ -12,7 +12,7 @@ function Footer() {
   return (
     <AppBar
       position="fixed"
-      color="primary"
+      color="secondary"
       component="footer"
       sx={{
         top: 'auto',
