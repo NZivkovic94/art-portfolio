@@ -11,13 +11,13 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 function Footer() {
   return (
     <AppBar
-      position="fixed" // Fixes the footer to the bottom
+      position="fixed"
       color="primary"
       component="footer"
       sx={{
         top: 'auto',
         bottom: 0,
-        width: '100%', // Ensures full width
+        width: '100%',
       }}
     >
       <Toolbar sx={{ flexDirection: 'column', textAlign: 'center', width: '100%' }}>
